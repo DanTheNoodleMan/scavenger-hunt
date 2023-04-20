@@ -64,10 +64,9 @@ input:focus{
     text-align: center;
 }
 
-.content-spot1{
+.content-spot1,.content-spot2{
     height:100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
 }
