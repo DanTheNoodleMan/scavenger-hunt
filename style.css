@@ -1,0 +1,73 @@
+html{
+    background-color: #000018;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input, label {
+    display:block;
+}
+
+label{
+    color:white;
+    font-size: 28px;
+    margin-bottom: 0.5rem;
+    letter-spacing:4px;
+}
+
+input{
+    font-size: 36px;
+    outline:0;
+    border-radius: 6px;
+    border:0;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:4px;
+}
+
+input:focus{
+    -moz-box-shadow: 0 0 16px #fff;
+    -webkit-box-shadow: 0 0 16px #fff;
+    box-shadow: 0px 0px 16px #fff;
+}
+
+.submit-btn{
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000018;
+    border:0;
+    color:white;
+    margin-top: 1rem;
+    align-content: center;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-out;
+    border-radius: 6px;
+}
+
+.submit-btn:hover{
+    transition: all 0.2s ease-out;
+    color: #000018;
+    background-color: white;
+}
+
+/*SPOT 1*/
+.title{
+    color:whitesmoke;
+}
+
+.text-content, .riddle1{
+    color:whitesmoke;
+    text-align: center;
+}
+
+.content-spot1{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
