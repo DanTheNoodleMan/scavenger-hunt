@@ -5,13 +5,9 @@ html{
     align-items: center;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
 }
 
-body{
-    width: 100%;
-    background:url(./bg2.png);
-    background-size: cover;
-}
 
 
 input, label {
@@ -66,7 +62,7 @@ input:focus{
     color:whitesmoke;
 }
 
-.text-content, .riddle1{
+.text-content, .riddle{
     color:whitesmoke;
     text-align: center;
 }
