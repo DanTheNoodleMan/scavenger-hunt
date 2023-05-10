@@ -13,3 +13,14 @@ function passCheck(){
         return;
     }
 }
+
+function revealCoord(){
+    let box = document.querySelector(".btn");
+    box.remove();
+
+    const para = document.createElement("p");
+    const tc = document.querySelector(".content-spot")
+    para.innerHTML = "40.416383630206, -3.715378639491842";
+    tc.appendChild(para);
+    para.classList.add("text-content");
+}
