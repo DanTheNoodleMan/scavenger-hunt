@@ -1,15 +1,14 @@
 html {
     background-color: #000018;
-    height: 100svh;
-    height: 100vh;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
+    overflow: auto;
 }
 
 body {
-    height: 100svh;
-    height: 100vh;
-    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    overflow: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -64,9 +63,10 @@ input:focus {
     background-color: white;
 }
 
-/*SPOT 1*/
+
 .title,
 b {
+  margin-top: 0;
     text-align: center;
     background: linear-gradient(
         to right,
@@ -109,6 +109,7 @@ b {
     }
 }
 .btn {
+  margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
