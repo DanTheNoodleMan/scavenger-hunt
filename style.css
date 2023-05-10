@@ -2,15 +2,11 @@ html {
     background-color: #000018;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
-    overflow: auto;
-    height: 100%;
 }
 
 body {
     margin: 0;
     height: 100%;
-    overflow: auto;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +43,7 @@ input:focus {
 .submit-btn {
     font-size: 28px;
     font-family: "Montserrat", sans-serif;
-    background-color: #000018;
+    background-color: transparent;
     border: 0;
     color: white;
     align-content: center;
@@ -295,7 +291,8 @@ b {
 }
 
 @media screen and (max-width: 600px) {
-    label, input, 
+    label,
+    input,
     .submit-btn {
         font-size: 0.8rem;
     }

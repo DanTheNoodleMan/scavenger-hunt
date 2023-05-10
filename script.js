@@ -8,24 +8,22 @@ let pass4 = "movie";
 
 function passCheck() {
     let pass = document.getElementById("password").value;
-    switch (pass) {
-        case pass1:
-            window.location.assign("spot1.html");
-            break;
-        case pass2:
-            window.location.assign("spot2.html");
-            break;
-        case pass3:
-            window.location.assign("spot3.html");
-            break;
-        case pass4:
-            window.location.assign("spot4.html");
-            break;
-    }
-    if (pass === password) {
-    } else {
-        alert("Wrong password");
-        return;
+    if (pass === pass1) {
+        console.log("pass1");
+        window.location.assign("./spot1.html");
+        alert("Success");
+    } else if (pass === pass2) {
+        console.log("pass2");
+        window.location.assign("./spot2.html");
+        alert("Success");
+    } else if (pass === pass3) {
+        console.log("pass3");
+        window.location.assign("./spot3.html");
+        alert("Success");
+    } else if (pass === pass4) {
+        console.log("pass4");
+        window.location.assign("./spot4.html");
+        alert("Success");
     }
 }
 
@@ -46,7 +44,8 @@ function revealAct2() {
 
     const para = document.createElement("p");
     const tc = document.querySelector(".activity");
-    para.innerHTML = "Walking around undiscovered streets! <br> Me first: let's gooooo...<b>left</b>!";
+    para.innerHTML =
+        "Walking around undiscovered streets! <br> Me first: let's gooooo...<b>left</b>!";
     tc.appendChild(para);
     para.classList.add("text-content");
 }
