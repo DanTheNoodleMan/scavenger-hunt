@@ -1,277 +1,295 @@
 html {
-  background-color: #000018;
-  height: 100svh;
-  height: 100vh;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  overflow: auto;
+    background-color: #000018;
+    height: 100svh;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
 }
 
 body {
-  height: 100svh;
-  height: 100vh;
-  overflow: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100svh;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input,
 label {
-  display: block;
+    display: block;
 }
 
 label {
-  color: white;
-  font-size: 28px;
-  margin-bottom: 0.5rem;
-  letter-spacing: 4px;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 0.5rem;
+    letter-spacing: 4px;
 }
 
 input {
-  font-size: 36px;
-  outline: 0;
-  border-radius: 6px;
-  border: 0;
-  padding: 12px;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 4px;
+    font-size: 36px;
+    outline: 0;
+    border-radius: 6px;
+    border: 0;
+    padding: 12px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 4px;
 }
 
 input:focus {
-  -moz-box-shadow: 0 0 16px #fff;
-  -webkit-box-shadow: 0 0 16px #fff;
-  box-shadow: 0px 0px 16px #fff;
+    -moz-box-shadow: 0 0 16px #fff;
+    -webkit-box-shadow: 0 0 16px #fff;
+    box-shadow: 0px 0px 16px #fff;
 }
 
 .submit-btn {
-  font-size: 28px;
-  font-family: "Montserrat", sans-serif;
-  background-color: #000018;
-  border: 0;
-  color: white;
-  margin-top: 1rem;
-  align-content: center;
-  cursor: pointer;
-  letter-spacing: 2px;
-  transition: all 0.2s ease-out;
-  border-radius: 6px;
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #000018;
+    border: 0;
+    color: white;
+    margin-top: 1rem;
+    align-content: center;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-out;
+    border-radius: 6px;
 }
 
 .submit-btn:hover {
-  transition: all 0.2s ease-out;
-  color: #000018;
-  background-color: white;
+    transition: all 0.2s ease-out;
+    color: #000018;
+    background-color: white;
 }
 
 /*SPOT 1*/
 .title,
 b {
-  text-align: center;
-  background: linear-gradient(
-    to right,
-    #7953cd 20%,
-    #00affa 30%,
-    #0190cd 70%,
-    #764ada 80%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  background-size: 500% auto;
-  animation: textShine 5s ease-in-out infinite alternate;
+    text-align: center;
+    background: linear-gradient(
+        to right,
+        #7953cd 20%,
+        #00affa 30%,
+        #0190cd 70%,
+        #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
 }
+
+.highlight {
+    font-weight: bold;
+    background: linear-gradient(
+        to right,
+        #cd5353 20%,
+        #fa0000 30%,
+        #cd0101 70%,
+        #da4a4a 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
 @keyframes textShine {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 13rem;
-  height: 5rem;
-  background-size: 300% 300%;
-  backdrop-filter: blur(1rem);
-  border-radius: 2rem;
-  transition: 0.5s;
-  animation: gradient_301 10s ease infinite;
-  border: double 4px transparent;
-  background-image: linear-gradient(
-    to right,
-    #916ce0 20%,
-    #565eff 30%,
-    #3936d5 70%,
-    #9215ff 90%
-  );
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 5rem;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 2rem;
+    transition: 0.5s;
+    animation: gradient_301 10s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(
+        to right,
+        #916ce0 20%,
+        #565eff 30%,
+        #3936d5 70%,
+        #9215ff 90%
+    );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 
 #container-stars {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: 0.5s;
-  backdrop-filter: blur(1rem);
-  border-radius: 2rem;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 2rem;
 }
 
 #glow {
-  position: absolute;
-  display: flex;
-  width: 12rem;
+    position: absolute;
+    display: flex;
+    width: 12rem;
 }
 
 .circle {
-  width: 100%;
-  height: 30px;
-  filter: blur(2rem);
-  animation: pulse_3011 2s infinite;
-  z-index: -1;
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 2s infinite;
+    z-index: -1;
 }
 
 .circle:nth-of-type(1) {
-  background: rgba(254, 83, 186, 0.636);
+    background: rgba(254, 83, 186, 0.636);
 }
 
 .circle:nth-of-type(2) {
-  background: rgba(142, 81, 234, 0.704);
+    background: rgba(142, 81, 234, 0.704);
 }
 
 .btn:hover #container-stars {
-  z-index: 1;
-  background-color: #212121;
+    z-index: 1;
+    background-color: #212121;
 }
 
 .btn:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .btn:active {
-  border: double 4px #fe53bb;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  animation: none;
+    border: double 4px #fe53bb;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
 }
 
 .btn:active .circle {
-  background: #fe53bb;
+    background: #fe53bb;
 }
 
 #stars {
-  position: relative;
-  background: transparent;
-  width: 200rem;
-  height: 200rem;
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
 }
 
 #stars::after {
-  content: "";
-  position: absolute;
-  top: -10rem;
-  left: -100rem;
-  width: 100%;
-  height: 100%;
-  animation: animStarRotate 90s linear infinite;
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
 }
 
 #stars::after {
-  background-image: radial-gradient(#ffffff 1px, transparent 1%);
-  background-size: 50px 50px;
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
 }
 
 #stars::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 170%;
-  height: 500%;
-  animation: animStar 60s linear infinite;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
 }
 
 #stars::before {
-  background-image: radial-gradient(#ffffff 1px, transparent 1%);
-  background-size: 50px 50px;
-  opacity: 0.5;
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
 }
 
 @keyframes animStar {
-  from {
-    transform: translateY(0);
-  }
+    from {
+        transform: translateY(0);
+    }
 
-  to {
-    transform: translateY(-135rem);
-  }
+    to {
+        transform: translateY(-135rem);
+    }
 }
 
 @keyframes animStarRotate {
-  from {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(360deg);
+    }
 
-  to {
-    transform: rotate(0);
-  }
+    to {
+        transform: rotate(0);
+    }
 }
 
 @keyframes gradient_301 {
-  0% {
-    background-position: 0% 50%;
-  }
+    0% {
+        background-position: 0% 50%;
+    }
 
-  50% {
-    background-position: 100% 50%;
-  }
+    50% {
+        background-position: 100% 50%;
+    }
 
-  100% {
-    background-position: 0% 50%;
-  }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @keyframes pulse_3011 {
-  0% {
-    transform: scale(0.75);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-  }
+    0% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
 
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-  }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
 
-  100% {
-    transform: scale(0.75);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
+    100% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
 }
 
 .text-content,
 .riddle {
-  color: whitesmoke;
-  text-align: center;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 0;
 }
 
 .content-spot {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem;
 }
 
 /*ACTIVITY AREAS*/
 .activity {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
